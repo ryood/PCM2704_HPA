@@ -5,8 +5,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "LME49600_HPA_V2"
-Date "2019-10-14"
+Title "LME49600_HPA_V2.1"
+Date "2019-10-16"
 Rev "0.91"
 Comp "PNPN Manufactory"
 Comment1 ""
