@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PCM2704 Line Amp"
-Date "2019-11-12"
+Date "2019-11-15"
 Rev "Rev. A"
 Comp "PNPN Manufactory"
 Comment1 ""
@@ -604,7 +604,7 @@ F 3 "~" H 4150 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 5000 3300 5000
+	3150 5000 3300 5000
 Wire Wire Line
 	3950 5000 3950 4700
 Wire Wire Line
@@ -619,8 +619,6 @@ Wire Wire Line
 	3950 5500 4150 5500
 Wire Wire Line
 	4150 5500 4150 5450
-Wire Wire Line
-	2850 5100 3050 5100
 Connection ~ 4150 5100
 Wire Wire Line
 	4150 5100 4150 5050
@@ -870,12 +868,12 @@ $EndComp
 $Comp
 L power:+9V #PWR021
 U 1 1 5DC50056
-P 7000 4650
-F 0 "#PWR021" H 7000 4500 50  0001 C CNN
-F 1 "+9V" H 7015 4823 50  0000 C CNN
-F 2 "" H 7000 4650 50  0001 C CNN
-F 3 "" H 7000 4650 50  0001 C CNN
-	1    7000 4650
+P 7000 4950
+F 0 "#PWR021" H 7000 4800 50  0001 C CNN
+F 1 "+9V" H 7015 5123 50  0000 C CNN
+F 2 "" H 7000 4950 50  0001 C CNN
+F 3 "" H 7000 4950 50  0001 C CNN
+	1    7000 4950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -890,7 +888,7 @@ F 3 "" H 7000 5700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7000 4650 7000 4700
+	7000 4950 7000 5000
 Wire Wire Line
 	7000 5300 7000 5450
 Wire Wire Line
@@ -942,17 +940,6 @@ Wire Wire Line
 	6600 4700 6600 4800
 Wire Wire Line
 	7000 5550 7000 5700
-$Comp
-L Device:R R9
-U 1 1 5DCB46AD
-P 7000 4850
-F 0 "R9" H 7070 4896 50  0000 L CNN
-F 1 "10k" H 7070 4805 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6930 4850 50  0001 C CNN
-F 3 "~" H 7000 4850 50  0001 C CNN
-	1    7000 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7850 2100 7850 2200
 Wire Wire Line
@@ -993,7 +980,7 @@ L Device:R R7
 U 1 1 5DD2A85D
 P 6050 5500
 F 0 "R7" H 6120 5546 50  0000 L CNN
-F 1 "10k" H 6120 5455 50  0000 L CNN
+F 1 "4k7" H 6120 5455 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5980 5500 50  0001 C CNN
 F 3 "~" H 6050 5500 50  0001 C CNN
 	1    6050 5500
@@ -1004,7 +991,7 @@ L Device:R R8
 U 1 1 5DD2AC33
 P 6450 5150
 F 0 "R8" H 6520 5196 50  0000 L CNN
-F 1 "10k" H 6520 5105 50  0000 L CNN
+F 1 "4k7" H 6520 5105 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6380 5150 50  0001 C CNN
 F 3 "~" H 6450 5150 50  0001 C CNN
 	1    6450 5150
@@ -1016,41 +1003,6 @@ Wire Wire Line
 	4300 5750 4850 5750
 Connection ~ 4850 5750
 $Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5DCA298D
-P 2650 5000
-F 0 "J1" H 2800 5050 50  0000 C CNN
-F 1 "PWR+" H 2568 5126 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2650 5000 50  0001 C CNN
-F 3 "~" H 2650 5000 50  0001 C CNN
-	1    2650 5000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5DCA3545
-P 2650 5450
-F 0 "J2" H 2800 5500 50  0000 C CNN
-F 1 "PWR-" H 2568 5576 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2650 5450 50  0001 C CNN
-F 3 "~" H 2650 5450 50  0001 C CNN
-	1    2650 5450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2850 5450 3050 5450
-Wire Wire Line
-	3050 5450 3050 5100
-Connection ~ 3050 5100
-Wire Wire Line
-	3050 5100 3700 5100
-Wire Wire Line
-	2850 5350 2900 5350
-Wire Wire Line
-	2900 5350 2900 5200
-Wire Wire Line
-	2900 5200 3300 5200
-$Comp
 L Device:R R10
 U 1 1 5DC84C38
 P 7650 2000
@@ -1061,4 +1013,19 @@ F 3 "~" H 7650 2000 50  0001 C CNN
 	1    7650 2000
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5DD00DFB
+P 2950 5100
+F 0 "J1" H 3030 5142 50  0000 L CNN
+F 1 "PWR_IN" H 3030 5051 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 2950 5100 50  0001 C CNN
+F 3 "~" H 2950 5100 50  0001 C CNN
+	1    2950 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5100 3700 5100
+Wire Wire Line
+	3150 5200 3300 5200
 $EndSCHEMATC
